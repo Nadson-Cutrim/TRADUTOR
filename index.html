@@ -1,35 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="assets/img/mapa.jpg" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="assets/img/mapa.jpg" type="image/x-icon" />
     <title>Tradutor Dev Club</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="caixa-maior">
-        <h1>Tradutor dos Deuses</h1>
-        <textarea id="input-text" title="Texto para tradução" placeholder="Digite o texto aqui..."></textarea>
-        <div class="controle">
-            <select class="idioma" title="Selecione o idioma para tradução">
+      <h1>Tradutor dos Deuses</h1>
+      <textarea
+        id="input-text"
+        title="Texto para tradução"
+        placeholder="Digite o texto aqui..."
+      ></textarea>
+      <div class="controle">
+        <select class="idioma" title="Selecione o idioma para tradução">
+          <option disabled selected hidden>Selecione o idioma</option>
+          <option>Inglês</option>
+          <option>Alemão</option>
+          <option>Japonês</option>
+        </select>
 
-                <option disabled selected hidden>Selecione o idioma</option>
-                <option>Inglês</option>
-                <option>Alemão</option>
-                <option>Japonês</option>
-            </select>
-
-            <button aria-label="Traduzir"><img src="/assets/icon/traduzir.svg" alt=""></button>
-            <button aria-label="Ouvir tradução"><img src="/assets/icon/microfone.svg" alt=""></button>
-        </div>
-            <div class="resultado">
-                <h3 class="titulo-traducao"> Tradução</h3>
-                <p class="traducao">A tradução aparecerá aqui...</p>
-            </div>
+        <button aria-label="Traduzir" onclick="traduzir()">
+          <img src="/assets/icon/traduzir.svg" alt="" />
+        </button>
+        <button aria-label="Ouvir tradução">
+          <img src="/assets/icon/microfone.svg" alt="" />
+        </button>
+      </div>
+      <div class="resultado">
+        <h3 class="titulo-traducao">Tradução</h3>
+        <p class="traducao">A tradução aparecerá aqui...</p>
+      </div>
     </div>
-</body>
-
+    <script src="/js/script.js"></script>
+  </body>
 </html>
